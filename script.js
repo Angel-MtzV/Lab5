@@ -120,7 +120,7 @@ readText.addEventListener('click', () => {
   var bottom = document.getElementById("text-bottom").value;
   var sayTop = new SpeechSynthesisUtterance(top);
   var sayBottom = new SpeechSynthesisUtterance(bottom);
-  var voiceSelected = document.getElementById("voice-selection").value;
+  var voiceSelected = document.getElementById("voice-selection").selectedOptions[0].getAttribute('name');
   var slide = document.querySelector("[type='range']").value;
 
   for(let i = 0; i < voice.length; i++){
